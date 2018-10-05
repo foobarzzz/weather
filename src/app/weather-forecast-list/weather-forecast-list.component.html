@@ -1,0 +1,19 @@
+<div>
+
+<p>Weather Forecast: </p>
+
+<button (click) = "getWeather()">Get Local Weather</button>
+
+<div *ngIf = "cityDetails!=null">
+	<div>{{	cityDetails.cityName }}</div>
+	<div>{{	cityDetails.stateCode }}</div>
+	<div>{{ cityDetails.countryCode }}</div>
+
+	<div *ngFor = "weather forecast">
+		<app-weather-forecast [weatherForecast] = "weatherForecast"></app-weather-forecast>
+	</div>
+</div>
+
+
+
+</div>
